@@ -68,6 +68,7 @@ import "@std/dotenv/load";
 import { server } from "./src/mcp/mod.ts";
 
 const defaultHandler = async (req: Request) => {
+  console.log("Default handler:", req);
   const id = await getSessionId(req) ?? -1;
   return createErrorResponse(id, METHOD_NOT_FOUND, "Not found");
 };

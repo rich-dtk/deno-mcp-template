@@ -3,6 +3,7 @@ import { MCPClient } from "../src/client.ts";
 async function main() {
     // Create a new client instance
     const client = new MCPClient();
+    client.setSessionId("example-session-id");
 
     try {
         // Example 1: Make a JSON-RPC request

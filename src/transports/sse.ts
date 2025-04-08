@@ -9,6 +9,7 @@ export const getTransport = (sessionId: string): SSEServerTransport | undefined 
 };
 
 export const addTransport = (sessionId: string, transport: SSEServerTransport): void => {
+  console.log("Adding transport:", sessionId, transport);
   transports[sessionId] = transport;
 };
 
