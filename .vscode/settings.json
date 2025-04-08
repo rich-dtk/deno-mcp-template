@@ -7,5 +7,11 @@
     ],
     "[jsonc]": {
         "editor.defaultFormatter": "vscode.json-language-features"
-    }
+    },
+    "deno.lint": true,
+    "deno.internalDebug": true,
+    "deno.codeLens.test": true,
+    "terminal.integrated.enableFileLinks": "on",
+    "typescript.suggest.autoImports": false,
+    "javascript.suggest.autoImports": false
 }
